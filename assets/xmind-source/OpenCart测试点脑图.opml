@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>OpenCart 电商系统手工测试</title>
+  </head>
+  <body>
+    <outline text="OpenCart 电商系统手工测试">
+      <outline text="1. 项目概览">
+        <outline text="测试对象"/>
+        <outline text="测试目标"/>
+        <outline text="测试角色">
+          <outline text="游客"/>
+          <outline text="注册用户"/>
+          <outline text="后台管理员"/>
+        </outline>
+      </outline>
+      <outline text="2. 前台用户模块">
+        <outline text="注册">
+          <outline text="必填项校验"/>
+          <outline text="邮箱格式校验"/>
+          <outline text="重复邮箱校验"/>
+          <outline text="密码一致性"/>
+          <outline text="注册成功跳转"/>
+        </outline>
+        <outline text="登录">
+          <outline text="正确账号密码"/>
+          <outline text="错误密码"/>
+          <outline text="未注册邮箱"/>
+          <outline text="空输入"/>
+          <outline text="退出登录"/>
+          <outline text="登录态保持"/>
+        </outline>
+      </outline>
+      <outline text="3. 商品浏览模块">
+        <outline text="首页商品展示"/>
+        <outline text="分类浏览"/>
+        <outline text="商品搜索">
+          <outline text="有结果"/>
+          <outline text="无结果"/>
+        </outline>
+        <outline text="商品详情">
+          <outline text="商品名称"/>
+          <outline text="商品价格"/>
+          <outline text="商品图片"/>
+          <outline text="商品库存"/>
+          <outline text="商品描述"/>
+        </outline>
+        <outline text="排序与分页"/>
+      </outline>
+      <outline text="4. 购物车模块">
+        <outline text="加入购物车"/>
+        <outline text="重复添加商品"/>
+        <outline text="修改商品数量"/>
+        <outline text="删除商品"/>
+        <outline text="总价计算"/>
+        <outline text="库存边界">
+          <outline text="数量为 0"/>
+          <outline text="数量为负数"/>
+          <outline text="数量超过库存"/>
+        </outline>
+        <outline text="未登录购物车"/>
+      </outline>
+      <outline text="5. 下单结算模块">
+        <outline text="登录用户结算"/>
+        <outline text="未登录用户结算"/>
+        <outline text="收货地址">
+          <outline text="新增地址"/>
+          <outline text="地址必填项"/>
+          <outline text="地址格式"/>
+        </outline>
+        <outline text="配送方式"/>
+        <outline text="支付方式"/>
+        <outline text="订单备注"/>
+        <outline text="提交订单"/>
+        <outline text="重复提交"/>
+        <outline text="订单生成校验"/>
+      </outline>
+      <outline text="6. 后台登录与权限">
+        <outline text="管理员登录"/>
+        <outline text="错误密码"/>
+        <outline text="退出登录"/>
+        <outline text="未登录访问后台"/>
+        <outline text="普通用户访问后台"/>
+      </outline>
+      <outline text="7. 后台商品管理">
+        <outline text="新增商品"/>
+        <outline text="编辑商品"/>
+        <outline text="删除商品"/>
+        <outline text="商品上下架"/>
+        <outline text="库存维护"/>
+        <outline text="价格维护"/>
+        <outline text="商品筛选"/>
+        <outline text="前后台数据同步"/>
+      </outline>
+      <outline text="8. 后台订单管理">
+        <outline text="订单列表"/>
+        <outline text="订单筛选">
+          <outline text="按订单号"/>
+          <outline text="按客户"/>
+          <outline text="按状态"/>
+        </outline>
+        <outline text="订单详情"/>
+        <outline text="订单状态修改"/>
+        <outline text="订单历史"/>
+        <outline text="取消订单"/>
+      </outline>
+      <outline text="9. 客户管理">
+        <outline text="客户列表"/>
+        <outline text="客户筛选"/>
+        <outline text="新增客户"/>
+        <outline text="编辑客户"/>
+        <outline text="禁用客户"/>
+        <outline text="客户组"/>
+      </outline>
+      <outline text="10. 异常与风险">
+        <outline text="非法输入"/>
+        <outline text="重复点击"/>
+        <outline text="未授权访问"/>
+        <outline text="URL 参数异常"/>
+        <outline text="页面刷新与返回"/>
+        <outline text="错误提示清晰度"/>
+      </outline>
+      <outline text="11. 测试产出">
+        <outline text="测试计划"/>
+        <outline text="测试点脑图"/>
+        <outline text="测试用例"/>
+        <outline text="缺陷报告"/>
+        <outline text="测试总结"/>
+        <outline text="GitHub/Gitee 链接"/>
+      </outline>
+    </outline>
+  </body>
+</opml>
+
