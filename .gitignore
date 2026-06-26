@@ -1,0 +1,9 @@
+# OS/editor temp files
+Thumbs.db
+Desktop.ini
+*.tmp
+*.bak
+
+# Typora assets can be added intentionally under evidence/ or assets/
+.DS_Store
+
