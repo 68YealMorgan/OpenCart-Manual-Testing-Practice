@@ -22,6 +22,7 @@
 | 测试点分析 | [docs/03_测试点分析.md](docs/03_测试点分析.md) |
 | 测试用例 | [testcases/04_测试用例.md](testcases/04_测试用例.md) |
 | 缺陷报告 | [bugs/05_缺陷报告.md](bugs/05_缺陷报告.md) |
+| 禅道缺陷记录 | [evidence/zentao/README.md](evidence/zentao/README.md) |
 | 测试总结 | [docs/06_测试总结.md](docs/06_测试总结.md) |
 | 简历描述 | [docs/07_简历描述.md](docs/07_简历描述.md) |
 | Web 自动化测试补充 | [docs/10_Web自动化测试补充.md](docs/10_Web自动化测试补充.md) |
@@ -47,7 +48,7 @@
 | 版本 | 时间 | 重点 | 说明 |
 | --- | --- | --- | --- |
 | v1.0 | 2026-06 | 手工测试执行版 | 搭建 OpenCart 本地环境，完成核心流程用例执行、缺陷记录和截图证据整理 |
-| v2.0 | 2026-06 | 测试能力扩展版 | 补充 Web 自动化测试设计和 Postman 接口测试设计，明确后续脚本和接口集合落地方向 |
+| v2.0 | 2026-06 | 测试能力扩展版 | 补充 Web 自动化测试设计、Postman 接口测试设计和禅道缺陷记录字段整理 |
 
 ## 仓库结构
 
@@ -74,7 +75,9 @@ OpenCart-Manual-Testing-Practice/
 ├── bugs/
 │   └── 05_缺陷报告.md
 ├── evidence/
-│   └── screenshots/
+│   ├── screenshots/
+│   └── zentao/
+│       └── README.md
 └── assets/
     ├── opencart-test-points-path-style-fixed.xmind
     └── xmind-source/
