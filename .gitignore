@@ -3,7 +3,7 @@ Thumbs.db
 Desktop.ini
 *.tmp
 *.bak
+*.bak_*
 
 # Typora assets can be added intentionally under evidence/ or assets/
 .DS_Store
-

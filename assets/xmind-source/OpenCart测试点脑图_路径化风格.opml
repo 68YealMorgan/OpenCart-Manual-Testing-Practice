@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>OpenCart 电商项目测试点</title>
+  </head>
+  <body>
+    <outline text="OpenCart 电商项目测试点">
+      <outline text="核心业务">
+        <outline text="用户注册登录流程">
+          <outline text="path_001: 注册成功 -&gt; 登录成功 -&gt; 进入我的账户"/>
+          <outline text="path_002: 注册必填项为空 -&gt; 前端/后端校验提示"/>
+          <outline text="path_003: 邮箱格式错误 -&gt; 拦截并提示"/>
+          <outline text="path_004: 两次密码不一致 -&gt; 拦截并提示"/>
+          <outline text="path_005: 错误密码登录 -&gt; 登录失败提示"/>
+        </outline>
+        <outline text="商品浏览流程">
+          <outline text="path_006: 首页商品展示 -&gt; 商品信息完整"/>
+          <outline text="path_007: 分类浏览 -&gt; 商品列表可见"/>
+          <outline text="path_008: 搜索 MacBook -&gt; 返回匹配结果"/>
+          <outline text="path_009: 搜索不存在商品 -&gt; 无结果提示"/>
+          <outline text="path_010: 商品详情 -&gt; 名称/价格/图片/库存展示"/>
+        </outline>
+        <outline text="购物车流程">
+          <outline text="path_011: 商品加入购物车 -&gt; 购物车数量与金额更新"/>
+          <outline text="path_012: 重复加入同一商品 -&gt; 数量累加"/>
+          <outline text="path_013: 修改商品数量 -&gt; 小计与总价重算"/>
+          <outline text="path_014: 数量输入 -1 -&gt; 应拦截并提示正整数"/>
+          <outline text="path_015: 删除商品 -&gt; 购物车清空或剩余商品正确"/>
+        </outline>
+        <outline text="下单结算流程">
+          <outline text="path_016: iPhone 下单成功 -&gt; 生成订单 -&gt; 后台可查"/>
+          <outline text="path_017: MacBook 结算 -&gt; 无支付方式可选 -&gt; 阻塞下单"/>
+          <outline text="path_018: 配送方式选择 -&gt; 运费计入总价"/>
+          <outline text="path_019: 支付方式选择 -&gt; Cash On Delivery 可选"/>
+          <outline text="path_020: 提交订单 -&gt; 邮件失败不应污染 JSON 响应"/>
+        </outline>
+        <outline text="后台验证流程">
+          <outline text="path_021: 管理员登录成功 -&gt; 进入 Dashboard"/>
+          <outline text="path_022: 商品列表筛选 -&gt; MacBook 结果正确"/>
+          <outline text="path_023: 订单列表查看 -&gt; 前台订单同步显示"/>
+          <outline text="path_024: 订单详情查看 -&gt; 客户/商品/金额一致"/>
+          <outline text="path_025: 后台安全提醒 -&gt; install/storage 风险可见"/>
+        </outline>
+      </outline>
+      <outline text="单模块">
+        <outline text="前台用户模块">
+          <outline text="注册字段校验"/>
+          <outline text="登录状态保持"/>
+          <outline text="退出登录"/>
+          <outline text="未登录访问账户页"/>
+        </outline>
+        <outline text="商品模块">
+          <outline text="商品分类"/>
+          <outline text="商品搜索"/>
+          <outline text="商品详情"/>
+          <outline text="排序与分页"/>
+        </outline>
+        <outline text="购物车模块">
+          <outline text="加入购物车"/>
+          <outline text="修改数量"/>
+          <outline text="删除商品"/>
+          <outline text="库存边界"/>
+          <outline text="异常数量输入"/>
+        </outline>
+        <outline text="结算模块">
+          <outline text="账单地址"/>
+          <outline text="配送方式"/>
+          <outline text="支付方式"/>
+          <outline text="订单确认"/>
+          <outline text="成功页跳转"/>
+        </outline>
+        <outline text="后台商品管理">
+          <outline text="商品列表"/>
+          <outline text="商品筛选"/>
+          <outline text="商品编辑"/>
+          <outline text="库存维护"/>
+        </outline>
+        <outline text="后台订单管理">
+          <outline text="订单列表"/>
+          <outline text="订单筛选"/>
+          <outline text="订单详情"/>
+          <outline text="订单状态"/>
+        </outline>
+      </outline>
+      <outline text="非功能">
+        <outline text="安全配置">
+          <outline text="RISK_004: install 目录仍存在"/>
+          <outline text="RISK_005: storage 目录位于 Web 目录内"/>
+          <outline text="普通用户访问后台拦截"/>
+          <outline text="URL 参数异常处理"/>
+        </outline>
+        <outline text="输入校验">
+          <outline text="BUG_003: 购物车负数数量未明确拦截"/>
+          <outline text="空输入"/>
+          <outline text="超长输入"/>
+          <outline text="特殊字符输入"/>
+        </outline>
+        <outline text="可用性">
+          <outline text="错误提示清晰度"/>
+          <outline text="操作后状态反馈"/>
+          <outline text="重复点击处理"/>
+          <outline text="页面刷新与返回"/>
+        </outline>
+        <outline text="数据一致性">
+          <outline text="前台订单与后台订单一致"/>
+          <outline text="商品价格与订单金额一致"/>
+          <outline text="购物车金额与结算金额一致"/>
+        </outline>
+      </outline>
+      <outline text="缺陷与风险">
+        <outline text="BUG_001: MacBook 结算时无可选支付方式"/>
+        <outline text="BUG_002: 订单提交邮件警告导致 JSON 解析弹窗"/>
+        <outline text="BUG_003: 购物车商品数量输入 -1 后被清空"/>
+        <outline text="RISK_004: install 安装目录仍存在"/>
+        <outline text="RISK_005: storage 目录安全配置风险"/>
+      </outline>
+      <outline text="测试产出">
+        <outline text="测试计划"/>
+        <outline text="测试点脑图"/>
+        <outline text="测试用例"/>
+        <outline text="缺陷报告"/>
+        <outline text="测试截图"/>
+        <outline text="测试总结"/>
+        <outline text="禅道缺陷记录"/>
+        <outline text="GitHub/Gitee 项目仓库"/>
+      </outline>
+    </outline>
+  </body>
+</opml>
